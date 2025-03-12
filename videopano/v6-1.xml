@@ -29,7 +29,7 @@
 		</image>
 
 		<!-- set the default view -->
-		<view hlookat="0" vlookat="0" fovtype="DFOV" fov="100" fovmin="75" fovmax="120" distortion="0.0" />
+		<view hlookat="190" vlookat="0" fovtype="DFOV" fov="100" fovmin="75" fovmax="120" distortion="0.0" />
 		
 		<action name="add_video_sources" >
 			if(browser.domain == 'krpano.com',
