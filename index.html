@@ -1,64 +1,27 @@
-<!DOCTYPE html>
-<!-- saved from url=(0060)https://docs.bivrost.pro/webplayer-docs/resolution-480p.html -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<title>360 Video</title>
-		
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link href="Bivrost_files/bootstrap.min.css" rel="stylesheet">
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>krpano</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, viewport-fit=cover" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+	<meta http-equiv="x-ua-compatible" content="IE=edge" />
+	<style>
+		html { height:100%; }
+		body { height:100%; overflow:hidden; margin:0; padding:0; font-family:Arial,Helvetica,sans-serif; font-size:16px; color:#FFFFFF; background-color:#000000; }
+	</style>
+</head>
+<body>
 
-		<link href="Bivrost_files/bivrost.css" rel="stylesheet">
-		<script src="Bivrost_files/bivrost-min.js"></script>
-		<script type="text/javascript">
-			//Bivrost.verbose=true;
-		</script>
-		<style type="text/css">
-			body { padding-bottom: 2em; }
-		</style>
-	</head>
-	<body>
+<script src="krpano.js"></script>
 
-		<article class="container" role="main">
+<div id="pano" style="width:100%;height:100%;">
+	<noscript><table style="width:100%;height:100%;"><tr style="vertical-align:middle;text-align:center;"><td>ERROR:<br><br>Javascript not activated<br><br></td></tr></table></noscript>
+	<script>
+		embedpano({xml:"krpano.xml", target:"pano", passQueryParameters:"xml,skin_settings.littleplanetintro,editmode"});
+	</script>
+</div>
 
-			<section>
-
-				<bivrost-player loop="true">
-					<bivrost-media url="video/4.mp4"></bivrost-media>
-					<bivrost-media url="https://avatars.githubusercontent.com/u/1727207?v=4"></bivrost-media>
-				</bivrost-player>
-
-			</section>
-
-			
-
-			<script type="text/javascript">
-
-
-				var player;
-function getQueryParam(name) {
-            const urlParams = new URLSearchParams(window.location.search);
-            return urlParams.get(name);
-        }
-
-        function setVideoUrl() {
-            const videoUrl = getQueryParam("video");
-            console.log("1:"+videoUrl);
-            if (videoUrl) {
-                const videoElement = document.querySelector("bivrost-media");
-                if (videoElement) {
-                    videoElement.setAttribute("url", decodeURIComponent(videoUrl));
-                    console.log("2:"+videoElement.getAttribute("url"));
-                }
-            }
-        }
-
-        addEventListener("load", function() {
-					player=document.getElementsByTagName("bivrost-player")[0].bivrost;
-				});
-			</script>
-
-		</article>
-		
-
-	
-</body></html>
+</body>
+</html>
