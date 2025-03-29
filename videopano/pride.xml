@@ -34,9 +34,9 @@
 		<action name="add_video_sources" >
 			if(browser.domain == 'krpano.com',
 				<!-- offer more resolutions and longer videos when showing this example online -->
-				videointerface_addsource('1024x512', '%CURRENTXML%/pride.mp4', '%CURRENTXML%/video-1024x512-poster.jpg');
+				videointerface_addsource('1024x512', '%CURRENTXML%/pride.mp4', '%CURRENTXML%/video-1024x512-poster2.jpg');
 			  ,
-				videointerface_addsource('1024x512', '%CURRENTXML%/pride.mp4', '%CURRENTXML%/video-1024x512-poster.jpg');
+				videointerface_addsource('1024x512', '%CURRENTXML%/pride.mp4', '%CURRENTXML%/video-1024x512-poster2.jpg');
 			);
 			videointerface_play('1024x512');
 		</action>
