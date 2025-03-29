@@ -9,7 +9,7 @@
 		  );
 	</action>
 
-	<scene name="videopano" title="Шодхан - Хара Дмитрий">
+	<scene name="videopano" title="PRIDE - Мужской клуб">
 		
 		<!-- include the videoplayer interface / skin (with VR support) -->
 		<include url="skin/videointerface.xml" />
